@@ -14,5 +14,12 @@ public class ArraysExercises {
         System.out.println(twelveFloats[4]);
         System.out.println(fiveDoubles[4]);
         System.out.println(sixBooleans[4]);
+
+        Object[] matrixOfArrays = {
+            eightIntegers,
+            twelveFloats,
+            fiveDoubles,
+            sixBooleans
+        };
     }
 }
