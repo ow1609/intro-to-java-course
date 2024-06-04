@@ -74,17 +74,27 @@ public class CollectionsExercises {
 
     public HashMap<Integer, String> useHashMap() {
         // TODO: create an empty hash map
+        HashMap<Integer, String> languages = new HashMap<>();
         //  - add {1, TypeScript} entry to the map
         //  - add {2, Kotlin} entry to the map
         //  - add {3, Python} entry to the map
         //  - add {4, Java} entry to the map
         //  - add {5, JavaScript} entry to the map
         //  - add {6, Rust} entry to the map
+        languages.put(1, "TypeScript");
+        languages.put(2, "Kotlin");
+        languages.put(3, "Python");
+        languages.put(4, "Java");
+        languages.put(5, "JavaScript");
+        languages.put(6, "Rust");
         //  - determine the set of keys from the map and print it on the screen
+        System.out.print(languages.keySet());
         //  - determine the set of values from the map and print it on the screen
+        System.out.print(languages.values());
         //  - determine whether the map contains "English" as a language and print the result on the screen
+        System.out.println(languages.containsValue("English"));
         //  - return the map
-        throw new RuntimeException("Not implemented");
+        return languages;
     }
 
     public String getName() {
