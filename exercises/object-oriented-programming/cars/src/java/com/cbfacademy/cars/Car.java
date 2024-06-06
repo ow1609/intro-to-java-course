@@ -1,11 +1,11 @@
 public class Car {
 
-    private string make;
-    private string model;
-    private int year;
-    private string colour;
+    private String make;
+    private String model;
+    private Integer year;
+    private String colour;
 
-    public Car(string make, string model, int year, string colour) {
+    public Car(String make, String model, Integer year, String colour) {
         this.make = make;
         this.model = model;
         this.year = year;
@@ -20,7 +20,7 @@ public class Car {
         return this.model;
     }
 
-    public String getYear() {
+    public Integer getYear() {
         return this.year;
     }
 
@@ -28,17 +28,14 @@ public class Car {
         return this.colour;
     }
 
-    public String setColour(String newColour) {
+    public void setColour(String newColour) {
         this.colour = newColour;
     }
 
-    public class Car {
-        public static void main(String... args) {
-            Car blueVolvo = new Car("Volvo", "V40", 2012, "blue");
-            Car redPorsche = new Car("Porsche", "Panamera", 2009, "red");
-            Car greyAudi = new Car("Audi", "A3", 2018, "grey");
-        }
+  
+        Car blueVolvo = new Car("Volvo", "V40", 2012, "blue");
+        Car redPorsche = new Car("Porsche", "Panamera", 2009, "red");
+        Car greyAudi = new Car("Audi", "A3", 2018, "grey");
+    
     }
 
-
-}
