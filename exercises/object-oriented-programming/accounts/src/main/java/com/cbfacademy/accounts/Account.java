@@ -23,12 +23,12 @@ public class Account {
     }
 
     public double withdraw(double requested) {
-        if (this.balance >= requested) {
-            this.balance -= requested;
-            return requested;
+        if (requested < 0 || this.balance < requested){
+            return 0;
         }
         else {
-            return 0;
+            this.balance -= requested;
+            return requested;
         }
     }
 }
