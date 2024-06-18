@@ -6,6 +6,7 @@ public class Rectangle extends Shape {
     protected double width;
 
     public Rectangle(double length, double width) {
+        this.name = "Rectangle";
         this.length = length;
         this.width = width;
     }

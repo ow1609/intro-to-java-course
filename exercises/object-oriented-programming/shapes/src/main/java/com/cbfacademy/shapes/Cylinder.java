@@ -6,6 +6,7 @@ public class Cylinder extends Shape {
     protected double height;
 
     public Cylinder(double radius, double height) {
+        this.name = "Cylinder";
         this.radius = radius;
         this.height = height;
     }
