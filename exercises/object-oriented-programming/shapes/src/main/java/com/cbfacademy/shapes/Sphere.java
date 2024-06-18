@@ -9,6 +9,7 @@ public class Sphere extends Shape {
 
     }
 
+    @Override
     public double getArea(){
         return (4 * Math.PI * (radius * radius));
     }
