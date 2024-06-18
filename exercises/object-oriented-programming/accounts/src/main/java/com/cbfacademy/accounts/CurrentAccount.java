@@ -19,15 +19,25 @@ public class CurrentAccount extends Account {
         }   
     }
 
+    // @Override
+    // public double withdraw(double requested) {
+    //     if (((this.balance + this.overdraftLimit) < requested) || (requested <= 0)){
+    //         return 0;
+    //     }
+    //     else {
+    //         balance -= requested;
+    //         return requested;
+    //     }
+    // }
+
+    // refactored version of overriding withdraw method
     @Override
     public double withdraw(double requested) {
-        if (((this.balance + this.overdraftLimit) < requested) || (requested <= 0)){
-            return 0;
-        }
-        else {
+        if (((this.balance + this.overdraftLimit) >= requested) && !(requested < 0)) {
             balance -= requested;
             return requested;
         }
+        return 0;
     }
     
 }
