@@ -10,7 +10,7 @@ public class SavingsAccount extends Account {
     }
 
     public void applyInterest() {
-        deposit(getBalance() * interestRate);
+        deposit(balance * interestRate);
     }
 
     public double getInterestRate() {
