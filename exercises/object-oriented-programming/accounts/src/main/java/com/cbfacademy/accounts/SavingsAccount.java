@@ -2,7 +2,7 @@ package com.cbfacademy.accounts;
 
 public class SavingsAccount extends Account {
     
-    private double interestRate;
+    protected double interestRate;
 
     public SavingsAccount(int accountNumber, double balance, double interestRate) {
         super(accountNumber, balance);
