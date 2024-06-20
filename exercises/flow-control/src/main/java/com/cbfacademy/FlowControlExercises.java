@@ -14,7 +14,19 @@ public class FlowControlExercises {
         //  - if the ${element} is divisible by both 3 and 5, it adds “FizzBuzz” to the list
         //  - it adds the element to the list in any other case
         //  - it returns the constructed list
-        throw new RuntimeException("Not implemented");
+        List<String> result = new ArrayList<>();
+        for (int i = 0; i < numbers.size(); i++) {
+            if ((numbers.get(i) % 3 == 0) && (numbers.get(i) % 5 == 0)) {
+                result.add("FizzBuzz");
+            } else if (numbers.get(i) % 3 == 0) {
+                result.add("Fizz");
+            } else if (numbers.get(i) % 5 == 0) {
+                result.add("Buzz");
+            } else {
+                result.add(numbers.get(i).toString());
+            }
+        }
+        return result;
     }
 
     public String whichMonth(Integer number) {
