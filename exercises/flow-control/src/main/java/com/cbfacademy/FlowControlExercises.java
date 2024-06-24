@@ -33,7 +33,25 @@ public class FlowControlExercises {
         // TODO - Implement this method such that
         //  - it returns the month corresponding to the input ${number}
         //  - if the ${number} is invalid, the method should return "Invalid month number"
-        throw new RuntimeException("Not implemented");
+        List<String> months = new ArrayList<>();
+            months.add("January");
+            months.add("February");
+            months.add("March");
+            months.add("April");
+            months.add("May");
+            months.add("June");
+            months.add("July");
+            months.add("August");
+            months.add("September");
+            months.add("October");
+            months.add("November");
+            months.add("December");
+
+        if ((number >= 1) && (number <= 12)) {
+            return months.get(number - 1);
+        } else {
+            return "Invalid month number";
+        }
     }
 
     public Map<String, Integer> sumOfOddsAndSumOfEvens() {
