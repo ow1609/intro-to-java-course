@@ -6,9 +6,11 @@ public class BinarySearch implements Search {
 
         int low = 0;
         int high = sortedArray.length -1;
-        int mid = (Math.floorDiv((low + high), 2));
+        
             
         while (low <= high) {
+            // bug fix, mid had to be initialised inside the while loop
+            int mid = ((low + high)/2); 
             if (target == sortedArray[mid]) {
                 return mid;
             } else if (target > sortedArray[mid]) {
