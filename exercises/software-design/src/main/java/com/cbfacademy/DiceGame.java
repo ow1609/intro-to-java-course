@@ -5,9 +5,16 @@ public class DiceGame implements Game {
     private Player player2;
     private int targetScore = 30;
 
+
+    // Created a default constructor which does not require arguments 
+    // because GameFactory class was throwing an error 
     public DiceGame() {
-        player1 = PlayerFactory.create();
-        player2 = PlayerFactory.create();
+
+    }
+
+    public DiceGame(Player player1, Player player2) {
+        this.player1 = player1;
+        this.player2 = player2;
         player1.setName("Player 1");
         player2.setName("Player 2");
     }
